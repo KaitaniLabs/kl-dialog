@@ -36,13 +36,8 @@
  		if(!this.parent)
  			this.parent = document.getElementById("dialogHolder");
 
- 		let pageWrapper = document.getElementById("pageWrapper");
-
  		// Handle the options
  		this.options = _.extend(self.defaultOptions,options);
-
- 		if(!_.isNull(pageWrapper))
- 			pageWrapper.classList.add("blur");
 
  		// Check to see if the parent holder has the active class, apply if it doesn't
  		if(_.indexOf(self.parent.classList,"active") < 0){
@@ -76,10 +71,7 @@
 
  		let self = this;
 
- 		let dialogDismiss = document.getElementById("dialogDismiss");
- 		let pageWrapper = document.getElementById("pageWrapper");
-
- 		if(this.currentView){
+ 		if(self.currentView){
 
  			// Run the exit animation for the dialog
 	
@@ -90,7 +82,7 @@
  		}
 
  		if(force){
- 			this.options = this.defaultOptions;
+ 			self.options = self.defaultOptions;
 
  			self.parent.classList.remove("active");
 			self.parent.classList.remove("static");

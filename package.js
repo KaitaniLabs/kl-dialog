@@ -1,6 +1,6 @@
 Package.describe({
   name: 'allerion:kl-dialog',
-  version: '0.0.5',
+  version: '0.0.6',
   summary: 'Meteor modal dialog package. Under development, not suitable for production.',
   git: 'https://github.com/KaitaniLabs/kl-dialog.git',
   documentation: 'README.md'
