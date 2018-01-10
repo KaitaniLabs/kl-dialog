@@ -6,11 +6,11 @@
   right: 0;
   bottom: 0;
   display:none;
-  background : rgba(255,255,255,.85);
+  background : rgba(255,255,255,.9);
   z-index: -1;
 }
 .dialog-holder.dark {
-  background : rgba(0,0,0,.85);
+  background : rgba(0,0,0,.9);
 }
 
 .dialog-holder.active {
@@ -41,7 +41,7 @@
 
 .dialog-holder .dialog-top {
   position: relative;
-  padding: .5rem 1rem;
+  padding: 1rem;
   z-index: 2;
 }
 
@@ -69,11 +69,22 @@
 .dialog-dismiss {
   transition: all .25s ease;
 }
+
 .dialog-dismiss:hover, .dialog-dismiss.hover {
   -moz-transform: rotate(360deg);
   -webkit-transform: rotate(360deg);
   -o-transform: rotate(360deg);
   -ms-transform: rotate(360deg);
   transform: rotate(360deg);
+}
+
+.dialog-dismiss > a {
+  text-shadow: 0px 0px 4px rgba(109, 109, 109, 1);
+  display:inline-block;
+  -webkit-transform:scale(2,1);
+  -moz-transform:scale(2,1);
+  -ms-transform:scale(2,1);
+  -o-transform:scale(2,1);
+  transform:scale(2,1);
 }
 
