@@ -1,0 +1,79 @@
+
+.dialog-holder {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display:none;
+  background : rgba(255,255,255,.85);
+  z-index: -1;
+}
+.dialog-holder.dark {
+  background : rgba(0,0,0,.85);
+}
+
+.dialog-holder.active {
+  display:block;
+  z-index: 2000;
+}
+.dialog-holder > .dialog-wrapper {
+  position:relative;
+  width: calc(100vw);
+  height: calc(100vh - 38px);
+  overflow-y: auto;
+  display:flex;
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+    -webkit-flex-direction: row !important;
+    -ms-flex-direction: row !important;
+    flex-direction: row !important;
+    -webkit-box-align: start !important;
+    -webkit-align-items: flex-start !important;
+    -ms-flex-align: start !important;
+    align-items: flex-start !important;
+    -webkit-box-pack: start !important;
+    -webkit-justify-content: start !important;
+    -ms-flex-pack: start !important;
+    justify-content: start !important;
+    z-index: 1;
+}
+
+.dialog-holder .dialog-top {
+  position: relative;
+  padding: .5rem 1rem;
+  z-index: 2;
+}
+
+.dialog-wrapper > .dialog-block {
+    position: relative;
+    width: 100vw;
+    height: calc(100vh - 4rem);
+    overflow: hidden;
+    padding-top: 1rem;
+}
+
+.dialog-wrapper > .dialog-block.dialog-block-full {
+  padding-top : 0 !important;
+  height: calc(100vh - 3rem);
+}
+
+.dialog-wrapper > .dialog-70 {
+  width: 70%;
+}
+
+.dialog-wrapper > .dialog-30 {
+  width: 30%;
+}
+
+.dialog-dismiss {
+  transition: all .25s ease;
+}
+.dialog-dismiss:hover, .dialog-dismiss.hover {
+  -moz-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
